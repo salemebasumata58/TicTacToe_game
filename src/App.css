@@ -1,9 +1,9 @@
 .App {
   text-align: center;
   background-color: #282c34;
-  height:46rem;
-}
 
+}
+/* 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -37,4 +37,84 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #282c34;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.container{
+  width:100%;
+  border: 1px solid red;
+  margin: auto;
+  
+  /* text-align: center; */
+}
+
+h1 {
+  margin: 2rem;
+}
+
+.board {
+  border: 1rem solid #282c34;
+  background: #2fa1ff;
+  width: 500px;
+  height: 500px;
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.squares {
+  background: #05253df0;
+  border: none;
+  font-size: 5rem;
+  color: white;
+  cursor: pointer;
+  outline: none;
+}
+
+
+.info-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+}
+
+h3 {
+  padding: 1rem;
+}
+
+li {
+  list-style: none;
+}
+
+.info-wrapper button {
+  background: #626262;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  margin: 0.5rem 1rem;
+  align-self: center;
+}
+.info-wrapper h3{
+  position: absolute;
+
+  
 }
