@@ -42,8 +42,8 @@ const Game = () => {
       <Board squares={history[stepNumber]} onClick={handleClick} />
       <div className="info-wrapper">
         <div>
-          <h3 style={{color:"red"}}>History</h3><br />
-          <br />{renderMoves()}
+          
+       {renderMoves()}
         </div>
         
       </div>
